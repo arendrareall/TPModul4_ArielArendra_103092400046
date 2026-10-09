@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 4: Internal CSS</title>
+    <style>
+        /*selector properties*/
+        body {
+            background-color: pink;
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        /*font properties*/
+        h2 {
+            text-align: left;
+            color: aqua;
+        }
+        /*selector class properties*/
+        .teks-kustom {
+            font-family: Arial;
+            font-size: medium;
+            font-style: italic;
+            font-weight: bold;
+            font-align: justify;
+            color: beige;
+        }
+        /*list properties*/
+        ul.listsatu{
+            background-color: aliceblue;
+            margin: 10px 5px 10px;
+            list-style-type: lower-alpha;
+            list-style-position: inside;
+            padding: 10px;
+        }
+
+        ol.listdua{
+            background-color: antiquewhite;
+            list-style-type: lower-roman;
+            list-style-position: inside;
+            padding: 10px 5px 10px;
+        }
+        /*styling elemen div*/
+        .section1 {
+            background-color: aliceblue;
+            padding: 15px 20px 15px 20px;
+            margin-top: 20px;
+            border: 2px solid;
+        }
+
+        .mark{
+            background-color: aliceblue;
+            font-style: italic;
+            font-weight: bold;
+            color: aliceblue;
+            padding: 5px 10px 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--contoh inline styling-->
+    <h1 style="color: aliceblue; text-align: center; text-decoration: underline;">  
+    Praktikum WEB Programming : CSS
+    </h1>
+    </hr>
+S
+    <!--implementasi font properties-->
+    <h2>1.font properties & alignment</h2>
+    <p class="teks-kustom">
+        contoh panggilan dari selektor
+    </p>
+
+    <!--implementasi list properties-->
+    <h2>2.list properties</h2>
+    <p>daftar unordered list:</p>
+    <ul class="listsatu">
+        <li>sofa</li>
+        <li>bantal</li>
+        <li>guling</li>
+    </ul>
+
+    <p>daftar ordered list:</p>
+    <ol class="listdua">
+        <li>ranking 1</li>
+        <li>ranking 2</li>
+        <li>ranking 3</li>
+    </ol>
+
+    <div class="section1">
+        <h2>3.penggunaan elemen div dan span</h2>
+        <p>
+            teks ini dibungkus oleh wadah <strong>div</strong>. <span class="mark">teks ini dibungkus oleh elemen span</span>
+        </p>
+    </div>
+</body>
+</html>
